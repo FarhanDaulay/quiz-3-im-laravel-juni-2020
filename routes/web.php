@@ -22,3 +22,7 @@ Route::get('/items/{id}', 'ItemController@show'); // menampilkan detail item den
 Route::get('/items/{id}/edit', 'ItemController@edit'); // menampilkan form untuk edit item
 Route::put('/items/{id}', 'ItemController@update'); // menyimpan perubahan dari form edit
 Route::delete('/items/{id}', 'ItemController@destroy'); // menghapus data dengan id
+
+Route::get('/artikel', 'ArtikelController@index'); //menampilkan artikel
+Route::post('/artikel', 'ArtikelController@store'); //simpan artikel
+Route::get('/artikel/create', 'ArtikelController@create'); //memasukkan artikel
